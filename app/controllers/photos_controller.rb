@@ -82,4 +82,8 @@ class PhotosController < ApplicationController
         raise Pundit::NotAuthorizedError, "not allowed"
       end
     end
+    
+    def feed?
+      true
+    end
 end
