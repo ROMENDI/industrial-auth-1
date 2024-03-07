@@ -1,4 +1,4 @@
-class FollowRequest < ApplicationPolicy
+class FollowRequestPolicy < ApplicationPolicy
 
   def create?
     true 
