@@ -6,6 +6,7 @@ class CommentPolicy < ApplicationPolicy
       @comment = comment
     end 
 
+    
     def create?
       true 
     end 
@@ -13,8 +14,10 @@ class CommentPolicy < ApplicationPolicy
     def update?
       user == comment.author
     end 
-
+    
     def destroy?
       user == comment.author
     end 
+    
 end 
+  
