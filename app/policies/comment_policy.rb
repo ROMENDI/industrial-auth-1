@@ -9,11 +9,7 @@ class CommentPolicy < ApplicationPolicy
     def create?
       true 
     end 
-
-    def new?
-      true 
-    end 
-
+    
     def update?
       user == comment.author
     end 
